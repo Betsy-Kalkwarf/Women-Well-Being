@@ -13,7 +13,7 @@ As women, we care about women's well-being and strive to figure out what aspects
 ## Questions we hope to answer with the data
 - Do different aspects of life (education, household factors, precipitation, fertility, etc.) impact overall women's well-being in similar ways?
 - As we advance through the years do we see an increase in healthier women?
-- What is the relationship between women's well-being in coutries with different levels of development?
+- What is the relationship between women's well-being in countries with different levels of development?
 
 ## Description of the communication protocols
 - Bi-weekly check-ins
