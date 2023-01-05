@@ -1,6 +1,6 @@
 # Women-Well-Being
 
-## RDD Setup
+## RDS Setup and ETL of Country datasources.
 
 Step1: Created a AWS database with postgres sql connection.
 Step2: Created S3 buckets and upoaded the following data sources.
@@ -46,3 +46,4 @@ Step 16: Created the inner join considering the country name in both the data fr
 Step 17: The resultant dataframe is uploaded into the database table in postgressql for further analysis with the livewell women well being dataset.
 
 Added screenshot of database updations.
+
