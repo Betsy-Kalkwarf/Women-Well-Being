@@ -1,7 +1,7 @@
 # Women's Well-Being
 
 ## Cleaning Data
-- Loaded original CSV file into Dataframe consisting of 7370 rows x 407 columns ([Database Source:](https://www.kaggle.com/datasets/konradb/wellbeing-of-women-in-52-countries?resource=download) [csv](https://github.com/Betsy-Kalkwarf/Women-Well-Being/blob/main/Resources/livwell_lin_interpolated.csv)
+- Loaded original CSV file into Dataframe consisting of 7370 rows x 407 columns ([Data source:](https://www.kaggle.com/datasets/konradb/wellbeing-of-women-in-52-countries?resource=download) [csv](https://github.com/Betsy-Kalkwarf/Women-Well-Being/blob/main/Resources/livwell_lin_interpolated.csv))
 - Extracted Domestic Violence and Education columns
 - Grouped data by "Country Name"
 - Saved to [dv_edu.csv](https://github.com/Betsy-Kalkwarf/Women-Well-Being/blob/code/clean_data.csv) file
