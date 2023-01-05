@@ -48,3 +48,5 @@
 Added screenshot of database updations.
 ![Schema and table results](https://user-images.githubusercontent.com/111100908/210674327-ba064496-361c-4ee5-8bca-939dbfe21ea4.png)
 
+- Step 18: Added Analysis_startercode.ipynb to get started with the cleaned country demographics.
+
