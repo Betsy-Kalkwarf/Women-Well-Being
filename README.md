@@ -46,4 +46,5 @@ Step 16: Created the inner join considering the country name in both the data fr
 Step 17: The resultant dataframe is uploaded into the database table in postgressql for further analysis with the livewell women well being dataset.
 
 Added screenshot of database updations.
+![Schema and table results](https://user-images.githubusercontent.com/111100908/210674327-ba064496-361c-4ee5-8bca-939dbfe21ea4.png)
 
