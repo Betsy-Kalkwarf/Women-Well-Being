@@ -1,6 +1,6 @@
 # Women-Well-Being - Livewell
 
-## RDS Setup and ETL process for country demographics.
+## Database: RDS Setup and ETL process for country demographics.
 
 - Step1: Created a AWS database with postgres sql connection.
 - Step2: Created S3 buckets and upoaded the following data sources.
@@ -50,3 +50,21 @@ Added screenshot of database updations.
 
 - Step 18: Added Analysis_startercode.ipynb to get started with the cleaned country demographics.
 
+
+## Machine Learning - Unsupervised
+- Step 1: Added ML_Indicators.ipynb
+- Step 2: Retrieved the datasource from remote database.
+- Step 3: Converted the pySpark datframe to pandas.
+- Step 4: Cleaned and created a new dataframe considering the means Indicators (22 columns/401 columns).
+- Step 5: Set up the machine learning model.
+- Step 6: Scaled the data.
+- Step 7: Fit and transform the data.
+- Step 8: Applied PCA for feature reduction.
+- Step 9: Checked the elbow curve to find the best count of clusters for K-Means clustering.
+![Elbow Curve K6](https://user-images.githubusercontent.com/111100908/210919519-61c83295-25d7-453d-b175-0ac028a9ed43.png)
+
+
+- Step 10: Created a 3d scatter plot to check the clusters.
+![PCA Clusters](https://user-images.githubusercontent.com/111100908/210919588-4998c04d-31e4-46e6-98f4-6b2beb9018a1.png)
+
+- Step 3:
