@@ -1,6 +1,7 @@
+
 # Women-Well-Being - Livewell
 
-## RDS Setup and ETL process for country demographics.
+## Database: RDS Setup and ETL process for country demographics.
 
 - Step1: Created a AWS database with postgres sql connection.
 - Step2: Created S3 buckets and upoaded the following data sources.
@@ -49,4 +50,45 @@ Added screenshot of database updations.
 ![Schema and table results](https://user-images.githubusercontent.com/111100908/210674327-ba064496-361c-4ee5-8bca-939dbfe21ea4.png)
 
 - Step 18: Added Analysis_startercode.ipynb to get started with the cleaned country demographics.
+
+
+## Machine Learning - Unsupervised
+- Step 1: Added ML_Indicators.ipynb
+- Step 2: Retrieved the datasource from remote database.
+- Step 3: Converted the pySpark datframe to pandas.
+- Step 4: Cleaned and created a new dataframe considering the means Indicators (22 columns/401 columns).
+- Step 5: Set up the machine learning model.
+- Step 6: Scaled the data.
+- Step 7: Fit and transform the data.
+- Step 8: Applied PCA for feature reduction.
+- Step 9: Checked the elbow curve to find the best count of clusters for K-Means clustering.
+![Elbow Curve K6](https://user-images.githubusercontent.com/111100908/210919519-61c83295-25d7-453d-b175-0ac028a9ed43.png)
+
+
+- Step 10: Created a 3d scatter plot to check the clusters.
+![PCA Clusters](https://user-images.githubusercontent.com/111100908/210919588-4998c04d-31e4-46e6-98f4-6b2beb9018a1.png)
+
+- Step 3:
+=======
+# Women's Well-Being
+
+## Selected topic
+What aspects of life most impact women's well-being worldwide?
+
+
+## Reason why we selected our topic 
+As women, we care about women's well-being and strive to figure out what aspects of life most impact if women live long and happy lives.
+
+## Description of our source of data
+"LivWell is a global longitudinal database which provides a range of key indicators related to women’s socioeconomic status, health and well-being, access to basic services, and demographic outcomes. Data are available at the sub-national level for 52 countries and 447 regions. A total of 134 indicators are based on 199 Demographic and Health Surveys for the period 1990-2019, supplemented by extensive information on socioeconomic and climatic conditions in the respective regions for a total of 190 indicators. The resulting data offer various opportunities for policy-relevant research on gender inequality, inclusive development, and demographic trends at the sub-national level." [Source]([url](https://www.kaggle.com/datasets/konradb/wellbeing-of-women-in-52-countries?resource=download))
+
+## Questions we hope to answer with the data
+- Do different aspects of life (education, household factors, precipitation, fertility, etc.) impact overall women's well-being in similar ways?
+- As we advance through the years do we see an increase in healthier women?
+- What is the relationship between women's well-being in countries with different levels of development?
+
+## Description of the communication protocols
+- Bi-weekly check-ins
+- Betsy will approve items on Github
+- We will communicate often over Slack
 
