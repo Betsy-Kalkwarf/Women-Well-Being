@@ -68,6 +68,13 @@ Added screenshot of database updations.
 - Step 10: Created a 3d scatter plot to check the clusters.
 ![PCA Clusters](https://user-images.githubusercontent.com/111100908/210919588-4998c04d-31e4-46e6-98f4-6b2beb9018a1.png)
 
+## CSV generation methods:
+      Step1 : Run the Analysis_startercode to generate the CountryDemographics.csv from the PostgresSQL.
+      Step 2: Run the ML_Indictors jupyter notebook in google collab to generate the Livewell_Mean_Indicators CSV files from the datasources. This has included all the indictors that has mean. 
+       
+     As of now both the CSV files are uploaded into the branch for quick reference.
+
+
 - Step 3:
 =======
 # Women's Well-Being
