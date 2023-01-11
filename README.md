@@ -74,9 +74,10 @@ Added screenshot of database updations.
        
      As of now both the CSV files are uploaded into the branch for quick reference.
 
+## Code updations for dashboard usage
+     Generated the Women_well_being_clustered_data.csv to have all the indicators and country demographics data.
+       
 
-- Step 3:
-=======
 # Women's Well-Being
 
 ## Selected topic
