@@ -90,13 +90,10 @@ Added screenshot of database updations.
 - Loaded [dv_edu.csv](https://github.com/Betsy-Kalkwarf/Women-Well-Being/blob/code/dv_edu.csv) file
 - Dropped null values
 - Created scatter plot based on Elbow Curve method to decide  best number for K-value
-![scatter_plot](https://github.com/Betsy-Kalkwarf/Women-Well-Being/blob/code/Images/scatter.png)
-![elbow](https://github.com/Betsy-Kalkwarf/Women-Well-Being/blob/code/Images/elbow.png)
 - Scaled initial data
 - Initialize PCA model to get two principal components for data
 - Updated scatter plot based on new elbow curve and principal components
-![scatter_pca](https://github.com/Betsy-Kalkwarf/Women-Well-Being/blob/code/Images/scatter_pca.png)
-![elbow_pca](https://github.com/Betsy-Kalkwarf/Women-Well-Being/blob/code/Images/elbow_pca.png)
+
 =======
 
 ## Reason why we selected our topic 
