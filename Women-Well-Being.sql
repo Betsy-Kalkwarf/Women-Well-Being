@@ -1,8 +1,8 @@
 
-DROP TABLE IF EXISTS CountryDemographics;
+DROP TABLE IF EXISTS CountryGDPDemographics;
 
 
-CREATE TABLE CountryDemographics (
+CREATE TABLE CountryGDPDemographics (
    country_name character varying(50) NOT NULL,
   country_code character varying(5) NOT NULL,
   latitude FLOAT NOT NULL,
@@ -10,6 +10,5 @@ CREATE TABLE CountryDemographics (
   GDP FLOAT NOT NULL
 );
 
-SELECT * FROM countrydemographics;
-
+SELECT * FROM CountryGDPDemographics;
 
