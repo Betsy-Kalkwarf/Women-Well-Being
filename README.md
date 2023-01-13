@@ -87,12 +87,20 @@ Added screenshot of database updations.
 
 
 ## Machine Learning
-- Loaded [dv_edu.csv](https://github.com/Betsy-Kalkwarf/Women-Well-Being/blob/code/dv_edu.csv) file
-- Dropped null values
-- Created scatter plot based on Elbow Curve method to decide  best number for K-value
-- Scaled initial data
-- Initialize PCA model to get two principal components for data
-- Updated scatter plot based on new elbow curve and principal components
+
+We chose an unsupervised learning model because the data source did not have any predictions, and we wanted to be able to cluster the indicators chosen based on country.
+
+### Data Cleaning [Country Demographics](https://github.com/Betsy-Kalkwarf/Women-Well-Being/blob/main/CountryDemographics.csv)
+Our database was huge and had numerous missing values so we replaced those N/A values to 0. We only considered data after the year 2000. We chose five independent variables to operate as our input in our machine learning model. The indicators are: Domestic Violence Rate, Mean of Age, Mean of Marriage Age, Mean of Education Years, and Fertility Rate for 52 countries. 
+
+### Data Integration [Country Indicators](https://github.com/Betsy-Kalkwarf/Women-Well-Being/blob/main/Country_Indicators.csv)
+We found three different sources from AWS and merged them together to include the country's GDP, Latitude, and Longitude. 
+
+### Data Transformation [Livewell Mean Indicators](https://github.com/Betsy-Kalkwarf/Women-Well-Being/blob/main/Livewell_Mean_Indicators.csv)
+Based on country name, we calculated the average for each indicator and clustered them together. We used standard scaler to scale up or down the averages. 
+
+### Data Reduction [Women Well Being Data](https://github.com/Betsy-Kalkwarf/Women-Well-Being/blob/main/Women_Wellbeing_data.csv)
+We applied Principal Component Analysis to perform feature reduction. 
 
 =======
 
