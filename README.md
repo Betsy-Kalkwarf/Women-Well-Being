@@ -117,4 +117,7 @@ As women, we care about women's well-being and strive to figure out what aspects
 - Betsy will approve items on Github
 - We will communicate often over Slack
 
+## Presentation
+- [Google Slides Presentation](https://docs.google.com/presentation/d/1hRlJgyBabrDAQDgSi3ly5Jqvl-1FRBKlJ0P7cGGbLTE/edit#slide=id.g1d494fcdba2_0_0)
+
 
