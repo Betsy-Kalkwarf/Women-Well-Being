@@ -1,10 +1,24 @@
 # Women-Well-Being
 
-# Women-Well-Being - Livewell
+## Reason why we selected our topic 
+As women, we care about women's well-being and strive to figure out what aspects of life most impact if women live long and happy lives.
 
-## Dashboard
-The dashboard for our project can be found on Tableau
-[link to story](https://public.tableau.com/app/profile/betsy.kalkwarf/viz/WomensWellBeing_16739131747520/WomensWellBeing?publish=yes)
+## Description of our source of data
+"LivWell is a global longitudinal database which provides a range of key indicators related to women’s socioeconomic status, health and well-being, access to basic services, and demographic outcomes. Data are available at the sub-national level for 52 countries and 447 regions. A total of 134 indicators are based on 199 Demographic and Health Surveys for the period 1990-2019, supplemented by extensive information on socioeconomic and climatic conditions in the respective regions for a total of 190 indicators. The resulting data offer various opportunities for policy-relevant research on gender inequality, inclusive development, and demographic trends at the sub-national level." [Source]([url](https://www.kaggle.com/datasets/konradb/wellbeing-of-women-in-52-countries?resource=download))
+
+## Questions we hope to answer with the data
+- Is there a relationship between country demographics and aspects of life indicators (domestic violence rate, marriage age, years of education, and fertility rate) that impact women's overall well-being?
+- Does GDP relate to these aspects of life?
+
+## Technologies Used
+- Python 3.8
+- SciKitLearn
+- AWS
+- PostgresSQL 42.5.1.jar
+- PySpark 3.2.3
+- Plotly
+- Excel
+- Tableau
 
 ## Database: RDS Setup and ETL process for country demographics.
 
@@ -54,38 +68,7 @@ The dashboard for our project can be found on Tableau
 Added screenshot of database updations.
 ![Schema and table results](https://user-images.githubusercontent.com/111100908/210674327-ba064496-361c-4ee5-8bca-939dbfe21ea4.png)
 
-- Step 18: Added Analysis_startercode.ipynb to get started with the cleaned country demographics.
-
-
-## Machine Learning - Unsupervised
-- Step 1: Added ML_Indicators.ipynb
-- Step 2: Retrieved the datasource from remote database.
-- Step 3: Converted the pySpark datframe to pandas.
-- Step 4: Cleaned and created a new dataframe considering the means Indicators (22 columns/401 columns).
-- Step 5: Set up the machine learning model.
-- Step 6: Scaled the data.
-- Step 7: Fit and transform the data.
-- Step 8: Applied PCA for feature reduction.
-- Step 9: Checked the elbow curve to find the best count of clusters for K-Means clustering.
-![Elbow Curve K6](https://user-images.githubusercontent.com/111100908/210919519-61c83295-25d7-453d-b175-0ac028a9ed43.png)
-
-
-- Step 10: Created a 3d scatter plot to check the clusters.
-![PCA Clusters](https://user-images.githubusercontent.com/111100908/210919588-4998c04d-31e4-46e6-98f4-6b2beb9018a1.png)
-
-## CSV generation methods:
-      Step1 : Run the Analysis_startercode to generate the CountryDemographics.csv from the PostgresSQL.
-      Step 2: Run the ML_Indictors jupyter notebook in google collab to generate the Livewell_Mean_Indicators CSV files from the datasources. This has included all the indictors that has mean. 
-       
-     As of now both the CSV files are uploaded into the branch for quick reference.
-
-
-- Step 3:
 =======
-
-## Machine Learning
-
-We chose an unsupervised learning model because the data source did not have any predictions, and we wanted to be able to cluster the indicators chosen based on country.
 
 ### Data Cleaning [Country Demographics](https://github.com/Betsy-Kalkwarf/Women-Well-Being/blob/main/CountryDemographics.csv)
 Our database was huge and had numerous missing values so we replaced those N/A values to 0. We only considered data after the year 2000. We chose five independent variables to operate as our input in our machine learning model. The indicators are: Domestic Violence Rate, Mean of Age, Mean of Marriage Age, Mean of Education Years, and Fertility Rate for 52 countries. 
@@ -101,21 +84,32 @@ We applied Principal Component Analysis to perform feature reduction.
 
 =======
 
-## Reason why we selected our topic 
-As women, we care about women's well-being and strive to figure out what aspects of life most impact if women live long and happy lives.
+## Machine Learning - Unsupervised
 
-## Description of our source of data
-"LivWell is a global longitudinal database which provides a range of key indicators related to women’s socioeconomic status, health and well-being, access to basic services, and demographic outcomes. Data are available at the sub-national level for 52 countries and 447 regions. A total of 134 indicators are based on 199 Demographic and Health Surveys for the period 1990-2019, supplemented by extensive information on socioeconomic and climatic conditions in the respective regions for a total of 190 indicators. The resulting data offer various opportunities for policy-relevant research on gender inequality, inclusive development, and demographic trends at the sub-national level." [Source]([url](https://www.kaggle.com/datasets/konradb/wellbeing-of-women-in-52-countries?resource=download))
+We chose an unsupervised learning model because the data source did not have any predictions, and we wanted to be able to cluster the indicators chosen based on country.
 
-## Questions we hope to answer with the data
-- Do different aspects of life (education, household factors, precipitation, fertility, etc.) impact overall women's well-being in similar ways?
-- As we advance through the years do we see an increase in healthier women?
-- What is the relationship between women's well-being in countries with different levels of development?
+- Step 1: Added ML_Indicators.ipynb
+- Step 2: Retrieved the datasource from remote database.
+- Step 3: Converted the pySpark datframe to pandas.
+- Step 4: Cleaned and created a new dataframe considering the means Indicators (22 columns/401 columns).
+- Step 5: Set up the machine learning model.
+- Step 6: Scaled the data.
+- Step 7: Fit and transform the data.
+- Step 8: Applied PCA for feature reduction.
+- Step 9: Checked the elbow curve to find the best count of clusters for K-Means clustering.
+![Elbow Curve K6](https://github.com/Betsy-Kalkwarf/Women-Well-Being/blob/main/Resources/Elbow_curve.png)
 
-## Description of the communication protocols
-- Bi-weekly check-ins
-- Betsy will approve items on Github
-- We will communicate often over Slack
+
+- Step 10: Created a 3d scatter plot to check the clusters.
+![PCA Clusters](https://github.com/Betsy-Kalkwarf/Women-Well-Being/blob/main/Resources/PCA-Cluster.png)
+
+=======
+
+## Dashboard
+The dashboard for our project can be found on Tableau
+[link to story](https://public.tableau.com/app/profile/betsy.kalkwarf/viz/WomensWellBeing_16739131747520/WomensWellBeing?publish=yes)
+
+=======
 
 ## Presentation
 - [Google Slides Presentation](https://docs.google.com/presentation/d/1hRlJgyBabrDAQDgSi3ly5Jqvl-1FRBKlJ0P7cGGbLTE/edit#slide=id.g1d494fcdba2_0_0)
