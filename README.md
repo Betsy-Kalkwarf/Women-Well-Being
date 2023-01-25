@@ -30,7 +30,7 @@ As women, we care about women's well-being and strive to figure out what aspects
 - Step 3: Changed the visibility rules to public.
 - Step 4: Created a PostgresSql databases that connects to the aws RDS.
 - Step 5: Stored the connection string in the config.py
-- Step 5: Created a schema for the CountryDemographics with the following fields (Women-Well-Being.sql):
+- Step 6: Created a schema for the CountryDemographics with the following fields (Women-Well-Being.sql):
         
 ```python
 **      DROP TABLE IF EXISTS CountryDemographics;
@@ -44,10 +44,10 @@ As women, we care about women's well-being and strive to figure out what aspects
         );**
 ```
 
-- Step 6: Created a jupyter notebook Country_ETL.ipynb
-- Step 7: Setup the pySpark session and postgresql.
-- Step 8: Read the data from the aws database instance using Pyspark packages and load them into the dataframes.
-- Step 9: Create a schema for country_df
+- Step 7: Created a jupyter notebook Country_ETL.ipynb
+- Step 8: Setup the pySpark session and postgresql.
+- Step 9: Read the data from the aws database instance using Pyspark packages and load them into the dataframes.
+- Step 10: Create a schema for country_df
    ```python
     schema = StructType([
   StructField("country_code", StringType(), False),  
@@ -56,14 +56,14 @@ As women, we care about women's well-being and strive to figure out what aspects
   StructField("country_name", StringType(), False),
   ])
    ```
-- Step 10: Rearrange the columns and drop the null values and store into another dataframe.
-- Step 11: Read the Country_gdp and load it into the dataframe.
-- Step 12: Dropped the not needed columns "Indicator name","Indicator Code".
-- Step 13: Renamed the colummns "Country Name" and "Country Code" to "country_name" and "country_code".
-- Step 14: Dropped the null values.
-- Step 15: Calculated the average GDP of a country considering from the year 2000 till 2021 with row-wise aggregation and copied into a new dataframe.
-- Step 16: Created the inner join considering the country name in both the data frames country and country gdp.
-- Step 17: The resultant dataframe is uploaded into the database table in postgressql for further analysis with the livewell women well being dataset.
+- Step 11: Rearrange the columns and drop the null values and store into another dataframe.
+- Step 12: Read the Country_gdp and load it into the dataframe.
+- Step 13: Dropped the not needed columns "Indicator name","Indicator Code".
+- Step 14: Renamed the colummns "Country Name" and "Country Code" to "country_name" and "country_code".
+- Step 15: Dropped the null values.
+- Step 16: Calculated the average GDP of a country considering from the year 2000 till 2021 with row-wise aggregation and copied into a new dataframe.
+- Step 17: Created the inner join considering the country name in both the data frames country and country gdp.
+- Step 18: The resultant dataframe is uploaded into the database table in postgressql for further analysis with the livewell women well being dataset.
 
 Added screenshot of database updations.
 ![Schema and table results](https://user-images.githubusercontent.com/111100908/210674327-ba064496-361c-4ee5-8bca-939dbfe21ea4.png)
