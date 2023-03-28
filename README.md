@@ -106,8 +106,8 @@ We chose an unsupervised learning model because the data source did not have any
 =======
 
 ## Dashboard
-The dashboard for our project can be found on Tableau
-[link to story](https://public.tableau.com/app/profile/betsy.kalkwarf/viz/WomensWellBeing_16739131747520/WomensWellBeing?publish=yes)
+The dashboard for our project can be found on Tableau. (This is version 2.0 with the change in ML indicators.)
+[link to story](https://public.tableau.com/app/profile/betsy.kalkwarf/viz/WomensWellBeing2_0/Maps?publish=yes)
 
 =======
 
